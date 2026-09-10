@@ -1,0 +1,21 @@
+{
+  "name": "vencord-discord-chat-exporter",
+  "version": "0.2.0",
+  "private": true,
+  "description": "Native Discord export dialog for the official DiscordChatExporter CLI",
+  "license": "GPL-3.0-or-later",
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "test": "tsx --test tests/*.test.ts",
+    "install-plugin": "node scripts/install-plugin.mjs"
+  },
+  "devDependencies": {
+    "@types/node": "26.0.1",
+    "esbuild": "0.28.1",
+    "fflate": "0.8.3",
+    "tsx": "4.22.4"
+  }
+}

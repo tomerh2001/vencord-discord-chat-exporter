@@ -1,0 +1,217 @@
+.vc-dce-modal {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    color: var(--text-default, var(--text-normal));
+    font-size: 14px;
+    line-height: 1.45;
+    min-width: 0;
+}
+
+.vc-dce-modal p {
+    margin: 0;
+}
+
+.vc-dce-modal a {
+    color: var(--text-link);
+    text-decoration: underline;
+    text-underline-offset: 2px;
+}
+
+.vc-dce-notice {
+    padding: 12px 14px;
+    border: 1px solid var(--info-warning-foreground, #d5a440);
+    border-radius: 8px;
+    background: var(--info-warning-background, rgb(213 164 64 / 8%));
+    font-size: 13px;
+}
+
+.vc-dce-notice .vc-dce-safety-summary {
+    margin-top: 8px;
+}
+
+.vc-dce-section {
+    border: 1px solid var(--border-subtle, var(--background-modifier-accent));
+    border-radius: 8px;
+    min-width: 0;
+}
+
+.vc-dce-section > summary {
+    padding: 14px 16px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.vc-dce-section > summary::marker,
+.vc-dce-log-details > summary::marker {
+    color: var(--text-muted);
+}
+
+.vc-dce-summary-note {
+    margin-left: 8px;
+    color: var(--text-muted);
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.vc-dce-section-body,
+.vc-dce-section-open {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 0 16px 16px;
+}
+
+.vc-dce-section-open {
+    padding-top: 16px;
+}
+
+.vc-dce-section-title {
+    margin: 0;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.vc-dce-field {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    min-width: 0;
+}
+
+.vc-dce-label {
+    font-weight: 500;
+    font-size: 13px;
+    color: var(--text-strong, var(--header-primary));
+}
+
+.vc-dce-hint {
+    color: var(--text-muted);
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+.vc-dce-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    gap: 16px;
+}
+
+.vc-dce-button-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.vc-dce-error {
+    color: var(--text-danger, var(--status-danger));
+    overflow-wrap: anywhere;
+}
+
+.vc-dce-notice.vc-dce-error {
+    border-color: var(--status-danger);
+    background: var(--info-danger-background, rgb(242 63 67 / 8%));
+}
+
+.vc-dce-validation {
+    font-size: 13px;
+    color: var(--text-muted);
+}
+
+.vc-dce-validation ul {
+    margin: 6px 0 0;
+    padding-left: 20px;
+    list-style: disc;
+}
+
+.vc-dce-job {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 16px;
+    border-radius: 8px;
+    background: var(--background-surface-high, var(--background-secondary));
+}
+
+.vc-dce-job-header {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.vc-dce-status-dot {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    flex: 0 0 auto;
+    background: var(--text-muted);
+}
+
+.vc-dce-status-running {
+    background: var(--brand-500);
+}
+
+.vc-dce-status-completed {
+    background: var(--status-positive);
+}
+
+.vc-dce-status-failed {
+    background: var(--status-danger);
+}
+
+.vc-dce-status-completedWithWarnings {
+    background: var(--status-warning);
+}
+
+.vc-dce-path {
+    overflow-wrap: anywhere;
+    color: var(--text-muted);
+    font-size: 12px;
+}
+
+.vc-dce-log-details > summary {
+    cursor: pointer;
+    font-size: 13px;
+}
+
+.vc-dce-log {
+    box-sizing: border-box;
+    max-height: 240px;
+    overflow: auto;
+    margin: 10px 0 0;
+    padding: 12px;
+    border-radius: 6px;
+    background: var(--background-base-lowest, var(--background-tertiary));
+    color: var(--text-default, var(--text-normal));
+    font-family: var(--font-code);
+    font-size: 12px;
+    line-height: 1.5;
+    white-space: pre-wrap;
+    overflow-wrap: anywhere;
+    user-select: text;
+}
+
+.vc-dce-footnote {
+    padding-bottom: 4px;
+}
+
+.vc-dce-section > summary:focus-visible,
+.vc-dce-log-details > summary:focus-visible,
+.vc-dce-log:focus-visible {
+    outline: 2px solid var(--focus-primary, var(--brand-500));
+    outline-offset: 2px;
+    border-radius: 4px;
+}
+
+@media (width <= 600px) {
+    .vc-dce-grid {
+        grid-template-columns: minmax(0, 1fr);
+    }
+
+    .vc-dce-summary-note {
+        display: block;
+        margin: 4px 0 0 16px;
+    }
+}
