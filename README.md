@@ -9,7 +9,7 @@ The plugin still runs the actual exporter as a local child process; it is not a 
 ## Install
 
 1. Set up a [Vencord source installation](https://docs.vencord.dev/installing/custom-plugins/). Use Node.js 22 or newer and the package manager version specified by that checkout.
-2. Copy this plugin into your Vencord checkout:
+2. Download and extract the plugin ZIP from the [latest release](https://github.com/tomerh2001/vencord-discord-chat-exporter/releases/latest). Open a terminal in the extracted folder, then copy the plugin into your Vencord checkout:
 
    ```sh
    node scripts/install-plugin.mjs --vencord /path/to/Vencord

@@ -3,6 +3,14 @@
   "version": "0.2.0",
   "private": true,
   "description": "Native Discord export dialog for the official DiscordChatExporter CLI",
+  "homepage": "https://github.com/tomerh2001/vencord-discord-chat-exporter#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tomerh2001/vencord-discord-chat-exporter.git"
+  },
+  "bugs": {
+    "url": "https://github.com/tomerh2001/vencord-discord-chat-exporter/issues"
+  },
   "license": "GPL-3.0-or-later",
   "type": "module",
   "engines": {
