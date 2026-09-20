@@ -21,7 +21,7 @@
     "install-plugin": "node scripts/install-plugin.mjs"
   },
   "devDependencies": {
-    "@types/node": "26.0.1",
+    "@types/node": "26.6.2",
     "esbuild": "0.28.1",
     "fflate": "0.8.3",
     "tsx": "4.22.4"
